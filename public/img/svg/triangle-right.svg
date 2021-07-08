@@ -1,0 +1,35 @@
+<svg width="443" height="303" viewBox="0 0 443 303" fill="none" xmlns="http://www.w3.org/2000/svg" class="" style="">
+    <path d="M81.2192 286L14 12L433 82.4571L81.2192 286Z" stroke="#A8B9F1" class="gFcDgrpf_0"></path>
+    <g class="dots">
+        <path fill="#B671AC" d="M0,13A13,13 0,1,1 26,13A13,13 0,1,1 0,13" class="gFcDgrpf_1"></path>
+        <path fill="#B671AC" d="M0,13A13,13 0,1,1 26,13A13,13 0,1,1 0,13" class="gFcDgrpf_2"></path>
+        <path fill="#B671AC" d="M0,13A13,13 0,1,1 26,13A13,13 0,1,1 0,13" class="gFcDgrpf_3"></path>
+    </g>
+    <g class="dots">
+        <path fill="#B671AC" d="M63,283.5A20,19.5 0,1,1 103,283.5A20,19.5 0,1,1 63,283.5" class="gFcDgrpf_4"></path>
+        <path fill="#B671AC" d="M63,283.5A20,19.5 0,1,1 103,283.5A20,19.5 0,1,1 63,283.5" class="gFcDgrpf_5"></path>
+        <path fill="#B671AC" d="M63,283.5A20,19.5 0,1,1 103,283.5A20,19.5 0,1,1 63,283.5" class="gFcDgrpf_6"></path>
+    </g>
+    <g class="dots">
+        <path fill="#B671AC" d="M423,86A10,10 0,1,1 443,86A10,10 0,1,1 423,86" class="gFcDgrpf_7"></path>
+        <path fill="#B671AC" d="M423,86A10,10 0,1,1 443,86A10,10 0,1,1 423,86" class="gFcDgrpf_8"></path>
+        <path fill="#B671AC" d="M423,86A10,10 0,1,1 443,86A10,10 0,1,1 423,86" class="gFcDgrpf_9"></path>
+    </g>
+    <style>.gFcDgrpf_0{stroke-dasharray:1114 1116;stroke-dashoffset:1115;}.start
+        .gFcDgrpf_0{animation:gFcDgrpf_draw 1000ms linear 0ms forwards;}.gFcDgrpf_1{stroke-dasharray:82
+        84;stroke-dashoffset:83;}.start .gFcDgrpf_1{animation:gFcDgrpf_draw 1000ms linear 55ms
+        forwards;}.gFcDgrpf_2{stroke-dasharray:82 84;stroke-dashoffset:83;}.start .gFcDgrpf_2{animation:gFcDgrpf_draw
+        1000ms linear 111ms forwards;}.gFcDgrpf_3{stroke-dasharray:82 84;stroke-dashoffset:83;}.start
+        .gFcDgrpf_3{animation:gFcDgrpf_draw 1000ms linear 166ms forwards;}.gFcDgrpf_4{stroke-dasharray:125
+        127;stroke-dashoffset:126;}.start .gFcDgrpf_4{animation:gFcDgrpf_draw 1000ms linear 222ms
+        forwards;}.gFcDgrpf_5{stroke-dasharray:125 127;stroke-dashoffset:126;}.start .gFcDgrpf_5{animation:gFcDgrpf_draw
+        1000ms linear 277ms forwards;}.gFcDgrpf_6{stroke-dasharray:125 127;stroke-dashoffset:126;}.start
+        .gFcDgrpf_6{animation:gFcDgrpf_draw 1000ms linear 333ms forwards;}.gFcDgrpf_7{stroke-dasharray:63
+        65;stroke-dashoffset:64;}.start .gFcDgrpf_7{animation:gFcDgrpf_draw 1000ms linear 388ms
+        forwards;}.gFcDgrpf_8{stroke-dasharray:63 65;stroke-dashoffset:64;}.start .gFcDgrpf_8{animation:gFcDgrpf_draw
+        1000ms linear 444ms forwards;}.gFcDgrpf_9{stroke-dasharray:63 65;stroke-dashoffset:64;}.start
+        .gFcDgrpf_9{animation:gFcDgrpf_draw 1000ms linear 500ms forwards;}@keyframes
+        gFcDgrpf_draw{100%{stroke-dashoffset:0;}}@keyframes
+        gFcDgrpf_fade{0%{stroke-opacity:1;}92.98245614035088%{stroke-opacity:1;}100%{stroke-opacity:0;}}
+    </style>
+</svg>

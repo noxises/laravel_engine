@@ -1,0 +1,9 @@
+<svg width="458" height="458" viewBox="0 0 458 458" fill="none" xmlns="http://www.w3.org/2000/svg" class="" style="">
+    <path stroke="url(#paint0_linear)" stroke-width="2" d="M1,229A228,228 0,1,1 457,229A228,228 0,1,1 1,229" class="VopPlRJC_0"></path>
+    <defs>
+        <linearGradient id="paint0_linear" x1="498" y1="216" x2="65" y2="216" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#B671AC"></stop>
+            <stop offset="1" stop-color="#B671AC" stop-opacity="0"></stop>
+        </linearGradient>
+    </defs>
+<style data-made-with="vivus-instant">.VopPlRJC_0{stroke-dasharray:1433 1435;stroke-dashoffset:1434;}.start .VopPlRJC_0{animation:VopPlRJC_draw 1000ms ease-out 0ms forwards;}@keyframes VopPlRJC_draw{100%{stroke-dashoffset:0;}}@keyframes VopPlRJC_fade{0%{stroke-opacity:1;}92.98245614035088%{stroke-opacity:1;}100%{stroke-opacity:0;}}</style></svg>

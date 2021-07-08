@@ -1,0 +1,428 @@
+.header {
+  position: relative;
+  overflow: hidden;
+  height: 100vh;
+  max-height: 1024px;
+
+  &.not-index {
+    max-height: none;
+    height: auto;
+
+    & .header-top{
+      padding: 30px 0;
+
+      @media (max-width: 768px) {
+        &.sticky{
+          padding: 10px 0;
+          position: fixed;
+          justify-content: space-around;
+          top: 0;
+          left: 0;
+          right: 0;
+          width: 100%;
+          z-index: 10;
+          background-image: linear-gradient(to left, #7B42BC, #3925C6, #1B14A7);
+          animation: slideHeaderTop .5s ease-out;
+        }
+      }
+    }
+  }
+
+  &-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+  }
+
+  &-top {
+    padding: 60px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+
+
+    @media (max-width: 768px) {
+      &.sticky{
+        padding: 10px 0;
+        position: fixed;
+        justify-content: space-around;
+        top: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        z-index: 10;
+        background-image: linear-gradient(to left, #7B42BC, #3925C6, #1B14A7);
+        animation: slideHeaderTop .5s ease-out;
+      }
+    }
+
+
+    & .logo {
+      text-decoration: none;
+      text-transform: uppercase;
+      color: #fff;
+      font-size: 28px;
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  &-text {
+    margin-top: 60px;
+    font-size: 5.2em;
+    color: #fff;
+    font-weight: 700;
+    max-width: 950px;
+    width: 100%;
+
+    @media (max-width: 991px) {
+      margin-top: 20px;
+      font-size: 50px;
+    }
+  }
+
+  &-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 60px;
+
+    @media (max-width: 768px) {
+      flex-wrap: wrap;
+    }
+  }
+
+  &-button {
+    text-decoration: none;
+    text-transform: uppercase;
+    background-image: linear-gradient(to left, #7B42BC, #3925C6, #1B14A7);
+    padding: 20px 0;
+    font-size: 24px;
+    letter-spacing: 1px;
+    width: 23%;
+    line-height: 1;
+    color: #fff;
+    font-weight: 700;
+    border: none;
+    transition: .5s ease-in-out;
+    cursor: pointer;
+    position: relative;
+
+
+    @media (max-width: 1199px) {
+      padding-top: 10px;
+      padding-bottom: 10px;
+      font-size: 18px;
+    }
+
+
+    @media (max-width: 768px) {
+      margin-bottom: 20px;
+      width: 45%;
+      font-size: 14px;
+    }
+  }
+}
+
+.nav {
+
+  @media (max-width: 768px) {
+    display: none;
+  }
+
+  &-mob {
+    display: block;
+    position: fixed;
+    right: 0;
+    top: 0;
+    height: 100%;
+    z-index: 2;
+    transform: translateX(100%);
+    background-color: rgba(0,0,0, .8);
+    padding-top: 100px;
+    transition: .5s ease;
+
+    & .nav-list {
+      flex-direction: column;
+      display: flex;
+    }
+
+    & .nav-item:last-child{
+      margin: 0 15px;
+    }
+
+    &.active {
+      transform: translateX(0);
+    }
+  }
+
+  &-item {
+    text-decoration: none;
+    color: #fff;
+    font-size: 24px;
+    margin: 0 30px;
+    position: relative;
+    padding: 5px;
+    transition: .5s ease;
+
+    &:after {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 0;
+      height: 2px;
+      background-color: #fff;
+      content: '';
+      transition: .5s ease;
+    }
+
+    &:hover {
+      &:after {
+        width: 100%;
+      }
+    }
+
+    @media (max-width: 991px) {
+      margin: 0 15px;
+    }
+  }
+}
+
+//parallelogram
+$widthPar: 256px;
+$heightPar: 256px;
+$colorRightPar: #7B4091;
+$colorLeftPar: #B671AC;
+$skewPar: 45deg;
+
+//rectangle
+$widthRect: 362px;
+$heightRect: 362px;
+$rotateRect: 45deg;
+$colorRect: #15128D;
+
+//rectangleTransparent
+$colorRectTrans: rgba(63, 60, 159, .8);
+
+
+.figure {
+  position: absolute;
+  height: inherit;
+  width: 50%;
+  right: 0;
+  z-index: -1;
+  animation: figureScale ease 1s;
+
+  @media (max-width: 768px) {
+    display: none;
+  }
+}
+
+.parallelogram {
+  position: absolute;
+  top: 0;
+  width: $widthPar;
+  height: $heightPar;
+
+  &.first {
+    transform: skew($skewPar);
+    background-color: $colorRightPar;
+    animation: parallelogramUp ease 1s;
+  }
+
+  &.second {
+    transform: skew(-$skewPar);
+    background-color: $colorLeftPar;
+    top: $widthPar;
+    animation: parallelogram ease 1.5s;
+  }
+
+  &.third {
+    transform: skew($skewPar);
+    background-color: $colorRightPar;
+    top: $widthPar*2;
+    animation: parallelogramUp ease 1.5s;
+  }
+
+  &.fourth {
+    transform: skew(-$skewPar);
+    background-color: $colorLeftPar;
+    top: $widthPar*3;
+    animation: parallelogram ease 1.5s;
+  }
+}
+
+.rectangle {
+  position: absolute;
+  left: 203px;
+  background-color: $colorRect;
+  width: $widthRect;
+  height: $heightRect;
+  transform: rotate($rotateRect);
+  animation: rect ease 1.5s;
+
+  &.first {
+    top: -$heightRect/2;
+  }
+
+  &.second {
+    top: 331px;
+  }
+
+  &.third {
+    top: 843px;
+  }
+}
+
+.rectangle-transparent {
+  position: absolute;
+  width: $widthRect;
+  height: $heightRect;
+  transform: rotate($rotateRect);
+  background-color: $colorRectTrans;
+  left: 459px;
+
+  &.first {
+    top: 75px;
+    animation: rectTransparent ease 1.5s, rectTransparentPosFirst ease 1.5s;
+  }
+
+  &.second {
+    top: 587px;
+    animation: rectTransparent ease 1.5s, rectTransparentPosSecond ease 1.5s;
+  }
+}
+
+
+.burger {
+  display: none;
+  @media (max-width: 768px) {
+    display: block;
+  }
+
+  &-trigger {
+    background-color: #fff;
+    width: 20px;
+    height: 2px;
+    position: relative;
+    transition: .3s ease;
+    z-index: 3;
+
+    &.active {
+      width: 5px;
+
+      &:before {
+        transform: rotateZ(-30deg);
+        width: 15px;
+        top: 4px;
+      }
+
+      &:after {
+        transform: rotateZ(30deg);
+        width: 15px;
+        bottom: 4px;
+      }
+    }
+
+    &:before {
+      content: '';
+      position: absolute;
+      width: inherit;
+      height: inherit;
+      background-color: #fff;
+      top: 6px;
+    }
+
+    &:after {
+      content: '';
+      position: absolute;
+      width: inherit;
+      height: inherit;
+      background-color: #fff;
+      bottom: 6px;
+    }
+  }
+}
+
+
+//animation
+
+@keyframes figureScale {
+  from {
+    transform: scale(2);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+@keyframes rectTransparentPosFirst {
+  from {
+    left: 203px;
+    top: 331px
+  }
+  70% {
+    left: 459px;
+    top: 75px
+  }
+}
+
+@keyframes rectTransparentPosSecond {
+  from {
+    left: 203px;
+    top: 331px
+  }
+  70% {
+    left: 459px;
+    top: 587px
+  }
+}
+
+@keyframes rectTransparent {
+  from {
+    transform: translateX(-800px) rotate($rotateRect)
+  }
+  to {
+    transform: translateX(0) rotate($rotateRect)
+  }
+}
+
+@keyframes rect {
+  from {
+    transform: translateX(-800px) translateY(-100px) rotate($rotateRect)
+  }
+  to {
+    transform: translateX(0) translateY(0) rotate($rotateRect)
+  }
+}
+
+
+@keyframes parallelogram {
+  from {
+    transform: translateY(-200px) translateX(-100px) skew(-$skewPar)
+  }
+  to {
+    transform: translateY(0) translateX(0) skew(-$skewPar)
+  }
+}
+
+@keyframes parallelogramUp {
+  from {
+    transform: translateY(200px) translateX(-100px) skew($skewPar)
+  }
+  to {
+    transform: translateY(0) translateX(0) skew($skewPar)
+  }
+}
+
+@keyframes slideHeaderTop {
+  0%{
+    transform: translateY(-100%);
+  }
+
+  100%{
+    transform: translateY(0);
+  }
+}

@@ -1,0 +1,750 @@
+@import "node_modules/sass-mediascreen/mediascreen";
+
+@media (max-height: 640px) {
+  .header-top{
+    padding: 20px 0;
+  }
+
+  .header-buttons{
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 375px) {
+  .content .title{
+    font-size: 36px;
+    text-align: left !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .triangle{
+    display: none;
+  }
+
+  .bg-text{
+    display: none !important;
+  }
+}
+
+@include device(iPhone5, portrait) {
+  .work{
+    padding: 30px 0;
+    & .text{
+      & .eclipse{
+        left: -115px;
+
+        & .small-eclipse{
+          display: none;
+
+          &-text{
+            display: none;
+          }
+        }
+      }
+    }
+  }
+  .content{
+    margin-bottom: 25px;
+
+    & .title{
+      font-size: 36px;
+    }
+    & .triangle{
+      top: 0;
+      left: -40px;
+      right: 0;
+      bottom: 0;
+      transform: scale(0.5);
+      opacity: .5;
+    }
+  }
+  .main{
+    max-width: 90%;
+  }
+  .wrapper{
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .header{
+    &-button{
+      padding: 20px 5px;
+    }
+    &-text{
+      font-size: 30px;
+    }
+    &-top{
+      padding: 20px 0;
+
+      & .logo{
+        transform: scale(.7);
+      }
+    }
+  }
+
+  .figure{
+    display: none;
+  }
+}
+@include device(iPhone5, landscape) {
+  .figure{
+    display: none;
+  }
+
+  .header{
+    &-top{
+      padding: 20px 0;
+    }
+    &-text{
+      font-size: 35px;
+      margin-top: 10px;
+    }
+
+    &-buttons{
+      margin-top: 15px;
+    }
+  }
+
+  .wrapper{
+    margin-top: 20px;
+    margin-bottom: 50px;
+  }
+
+  .content{
+    margin-bottom: 30px;
+
+    & .title{
+      font-size: 36px;
+    }
+
+    & .triangle{
+      opacity: .5;
+    }
+  }
+
+  .work{
+    padding: 50px 0;
+    & .text{
+      & .eclipse{
+        & .small-eclipse-text{
+          display: none;
+        }
+      }
+    }
+  }
+
+  .copyright{
+    margin-top: 20px;
+  }
+
+  .footer{
+    padding: 30px 0;
+
+    &-btn{
+      margin-top: 20px;
+    }
+  }
+}
+
+@include device(iPhone6 iPhone7 iPhone8, portrait) {
+  .work{
+    padding: 30px 0;
+    & .text{
+      & .eclipse{
+        left: -115px;
+
+        & .small-eclipse{
+          display: none;
+
+          &-text{
+            display: none;
+          }
+        }
+      }
+    }
+  }
+  .content{
+    margin-bottom: 25px;
+
+    & .title{
+      font-size: 36px;
+    }
+    & .triangle{
+      top: 0;
+      left: -40px;
+      right: 0;
+      bottom: 0;
+      transform: scale(0.5);
+      opacity: .5;
+    }
+  }
+  .main{
+    max-width: 90%;
+  }
+  .wrapper{
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .header{
+    &-button{
+      padding: 20px 5px;
+    }
+    &-text{
+      font-size: 30px;
+    }
+    &-top{
+      padding: 20px 0;
+
+      & .logo{
+        transform: scale(.7);
+      }
+    }
+  }
+
+  .figure{
+    display: none;
+  }
+}
+@include device(iPhone6 iPhone7 iPhone8, landscape) {
+  .figure{
+    display: none;
+  }
+
+  .header{
+    &-top{
+      padding: 20px 0;
+    }
+    &-text{
+      font-size: 35px;
+      margin-top: 10px;
+    }
+
+    &-buttons{
+      margin-top: 15px;
+    }
+  }
+
+  .wrapper{
+    margin-top: 20px;
+    margin-bottom: 50px;
+  }
+
+  .content{
+    margin-bottom: 30px;
+
+    & .title{
+      font-size: 36px;
+    }
+
+    & .triangle{
+      opacity: .5;
+    }
+  }
+
+  .work{
+    padding: 50px 0;
+    & .text{
+      & .eclipse{
+        & .small-eclipse-text{
+          display: none;
+        }
+      }
+    }
+  }
+
+  .copyright{
+    margin-top: 20px;
+  }
+
+  .footer{
+    padding: 30px 0;
+
+    &-btn{
+      margin-top: 20px;
+    }
+  }
+}
+
+@include device(iPhone6Plus iPhone7Plus iPhone8Plus, portrait) {
+  .work{
+    padding: 30px 0;
+    & .text{
+      & .eclipse{
+        left: -115px;
+
+        & .small-eclipse{
+          display: none;
+
+          &-text{
+            display: none;
+          }
+        }
+      }
+    }
+  }
+  .content{
+    margin-bottom: 25px;
+
+    & .title{
+      font-size: 36px;
+    }
+    & .triangle{
+      top: 0;
+      left: -40px;
+      right: 0;
+      bottom: 0;
+      transform: scale(0.5);
+      opacity: .5;
+    }
+  }
+  .main{
+    max-width: 90%;
+  }
+  .wrapper{
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .header{
+    &-button{
+      padding: 20px 5px;
+    }
+    &-text{
+      font-size: 50px;
+    }
+    &-top{
+      padding: 20px 0;
+
+      & .logo{
+        transform: scale(.7);
+      }
+    }
+  }
+
+  .figure{
+    display: none;
+  }
+}
+@include device(iPhone6Plus iPhone7Plus iPhone8Plus, landscape) {
+  .figure{
+    display: none;
+  }
+
+  .header{
+    &-top{
+      padding: 20px 0;
+    }
+    &-text{
+      font-size: 45px;
+      margin-top: 10px;
+    }
+
+    &-buttons{
+      margin-top: 15px;
+    }
+  }
+
+  .wrapper{
+    margin-top: 20px;
+    margin-bottom: 50px;
+  }
+
+  .content{
+    margin-bottom: 30px;
+
+    & .title{
+      font-size: 36px;
+    }
+
+    & .triangle{
+      opacity: .5;
+    }
+  }
+
+  .work{
+    padding: 50px 0;
+    & .text{
+      & .eclipse{
+        & .small-eclipse-text{
+          display: none;
+        }
+      }
+    }
+  }
+
+  .copyright{
+    margin-top: 20px;
+  }
+
+  .footer{
+    padding: 30px 0;
+
+    &-btn{
+      margin-top: 20px;
+    }
+  }
+}
+
+@include device(iPhoneX, portrait) {
+  .work{
+    padding: 30px 0;
+    & .text{
+      & .eclipse{
+        left: -115px;
+
+        & .small-eclipse{
+          display: none;
+
+          &-text{
+            display: none;
+          }
+        }
+      }
+    }
+  }
+  .content{
+    margin-bottom: 25px;
+
+    & .title{
+      font-size: 36px;
+    }
+    & .triangle{
+      top: 0;
+      left: -40px;
+      right: 0;
+      bottom: 0;
+      transform: scale(0.5);
+      opacity: .5;
+    }
+  }
+  .main{
+    max-width: 90%;
+  }
+  .wrapper{
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .header{
+    &-button{
+      padding: 20px 5px;
+    }
+    &-text{
+      font-size: 55px;
+    }
+    &-top{
+      padding: 20px 0;
+
+      & .logo{
+        transform: scale(.7);
+      }
+    }
+  }
+
+  .figure{
+    display: none;
+  }
+}
+@include device(iPhoneX, landscape) {
+  .scroll{
+    display: none;
+  }
+
+  .figure{
+    display: none;
+  }
+
+  .header{
+    &-top{
+      padding: 20px 0;
+    }
+    &-text{
+      font-size: 55px;
+      margin-top: 10px;
+    }
+
+    &-buttons{
+      margin-top: 15px;
+    }
+  }
+
+  .wrapper{
+    margin-top: 20px;
+    margin-bottom: 50px;
+  }
+
+  .content{
+    margin-bottom: 30px;
+
+    & .title{
+      font-size: 36px;
+    }
+
+    & .triangle{
+      opacity: .5;
+    }
+  }
+
+  .work{
+    padding: 50px 0;
+  }
+
+  .copyright{
+    margin-top: 20px;
+  }
+
+  .footer{
+    padding: 30px 0;
+
+    &-btn{
+      margin-top: 20px;
+    }
+  }
+}
+
+@include device(iPad1 iPad2 iPad3 iPad4, portrait) {
+  .content{
+    margin-bottom: 25px;
+
+    & .title{
+      font-size: 36px;
+    }
+    & .triangle{
+      top: 0;
+      left: -40px;
+      right: 0;
+      bottom: 0;
+      transform: scale(0.5);
+      opacity: .5;
+    }
+  }
+
+  .main{
+    max-width: 90%;
+  }
+  .wrapper{
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .header{
+    &-button{
+      padding: 20px 5px;
+    }
+    &-text{
+      font-size: 90px;
+    }
+    &-top{
+      padding: 20px 0;
+
+      & .logo{
+        transform: scale(.7);
+      }
+    }
+  }
+}
+@include device(iPad1 iPad2 iPad3 iPad4, landscape) {
+
+  .main{
+    margin-left: 100px;
+    margin-right: 25px;
+  }
+
+  .exp{
+    margin: 60px 0 50px 84px;
+    border-spacing: 0;
+  }
+
+  .header{
+    &-top{
+      padding: 40px 0;
+    }
+    &-text{
+      font-size: 90px;
+      margin-top: 20px;
+    }
+
+    &-buttons{
+      margin-top: 40px;
+    }
+  }
+
+  .team{
+    &-list{
+      flex-wrap: wrap;
+    }
+    &-item{
+      margin-bottom: 20px;
+    }
+  }
+
+  .wrapper{
+    margin-top: 20px;
+    margin-bottom: 50px;
+  }
+
+  .content{
+    margin-bottom: 30px;
+
+    & .title{
+      font-size: 36px;
+    }
+
+    &.first{
+      & .title{
+        margin-right: 30px;
+      }
+    }
+
+    &.left{
+      & .title{
+        margin-left: 30px;
+      }
+    }
+
+    & .triangle{
+      opacity: .5;
+    }
+  }
+
+  .work{
+    padding: 100px 0;
+    & .text{
+      & .eclipse{
+        transform: scale(.8);
+      }
+    }
+  }
+
+  .copyright{
+    margin-top: 20px;
+  }
+
+  .footer{
+    padding: 30px 0;
+
+    &-btn{
+      margin-top: 20px;
+    }
+  }
+}
+
+@include device(iPadPro10 iPadPro11 iPadPro12, portrait) {
+  .main{
+    margin-left: 100px;
+    margin-right: 25px;
+  }
+
+  .exp{
+    margin: 60px 10px 50px 75px;
+    border-spacing: 0;
+  }
+
+  .header{
+    &-top{
+      padding: 40px 0;
+    }
+    &-text{
+      font-size: 90px;
+      margin-top: 20px;
+    }
+
+    &-buttons{
+      margin-top: 40px;
+    }
+  }
+
+  .team{
+    &-list{
+      flex-wrap: wrap;
+    }
+    &-item{
+      margin-bottom: 20px;
+    }
+  }
+
+  .wrapper{
+    margin-top: 20px;
+    margin-bottom: 50px;
+  }
+
+  .content{
+    margin-bottom: 30px;
+    & .title{
+      font-size: 36px;
+    }
+
+    &.first{
+      & .title{
+        margin-right: 30px;
+      }
+    }
+
+    &.left{
+      & .title{
+        margin-left: 30px;
+      }
+    }
+
+    & .triangle{
+      opacity: .5;
+    }
+  }
+
+  .work{
+    padding: 100px 0;
+    & .text{
+      & .eclipse{
+        transform: scale(.8);
+      }
+    }
+  }
+
+  .copyright{
+    margin-top: 20px;
+  }
+
+  .footer{
+    padding: 30px 0;
+
+    &-btn{
+      margin-top: 20px;
+    }
+  }
+}
+@include device(iPadPro10 iPadPro11 iPadPro12, landscape) {
+
+  .content{
+    margin-bottom: 25px;
+
+    & .title{
+      font-size: 36px;
+    }
+    & .triangle{
+      top: 0;
+      left: -40px;
+      right: 0;
+      bottom: 0;
+      transform: scale(0.5);
+      opacity: .5;
+    }
+  }
+  .wrapper{
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .header{
+
+    &-buttons{
+      margin-top: 150px;
+    }
+    &-text{
+      font-size: 96px;
+      margin-top: 60px;
+    }
+    &-top{
+      padding: 20px 0;
+
+      & .logo{
+        transform: scale(.7);
+      }
+    }
+  }
+}

@@ -1,0 +1,114 @@
+.services{
+
+  & .services-item .services-inner .services-box {
+    margin: 0;
+  }
+
+  &-mob{
+    display: flex;
+    justify-content: space-between;
+
+    & div:nth-child(1){
+      padding-right: 15px;
+      display: flex;
+    }
+
+    & div:nth-child(2){
+      padding-left: 15px;
+    }
+  }
+
+  &-inner{
+    margin: 20px 60px;
+
+    @media (max-width: 768px){
+      margin: 5px;
+    }
+  }
+
+
+
+  &-item{
+    &>div{
+      &>div{
+        margin: 0 45px;
+      }
+    }
+
+    &:nth-child(3){
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      @media (max-width: 991px){
+        flex-direction: column;
+      }
+
+      & div{
+        width: 100%;
+        &:nth-child(1){
+          padding-right: 15px;
+
+          @media (max-width: 991px){
+            padding-right: 0;
+          }
+        }
+
+        &:nth-child(2){
+          padding-left: 15px;
+
+          @media (max-width: 991px){
+           padding-left: 0;
+          }
+        }
+      }
+
+      & img{
+        width: 100%;
+        max-height: 400px;
+        object-fit: cover;
+      }
+    }
+    & img{
+      max-width: 100%;
+      width: 100%;
+    }
+    & h2{
+      font-size: 24px;
+      text-align: left;
+    }
+  }
+  &-box{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  &-list{
+    padding: 0;
+    &:not(:last-child){
+      margin-right: 100px;
+
+      @media (max-width: 768px){
+        margin-right: 10px;
+      }
+    }
+
+    &-item{
+      list-style-type: none;
+      padding: 10px 0;
+
+      & a{
+        font-size: 18px;
+        color: #666;
+        font-weight: 400;
+        text-decoration: underline;
+
+        @media (max-width: 575px){
+          font-size: 14px;
+        }
+      }
+    }
+  }
+
+
+}

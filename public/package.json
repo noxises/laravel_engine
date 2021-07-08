@@ -1,0 +1,43 @@
+{
+  "name": "binopt",
+  "version": "1.0.0",
+  "description": "binopt-theme",
+  "main": "gulpfile.babel.js",
+  "devDependencies": {
+    "@babel/core": "^7.9.6",
+    "@babel/preset-env": "^7.9.6",
+    "@babel/register": "^7.9.0",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^4.1.0",
+    "gulp-sourcemaps": "^2.6.5",
+    "gulp-uglify": "^3.0.2"
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-env"
+    ]
+  },
+  "browserslist": [
+    "last 2 versions"
+  ],
+  "scripts": {
+    "start": "yarn install --modules-folder ./../node_modules"
+  },
+  "keywords": [
+    "HTML5",
+    "CSS3",
+    "Sass(Scss)",
+    "SMACSS",
+    "Node",
+    "npm",
+    "yarn",
+    "Gulp"
+  ],
+  "author": "Kharlanov Max",
+  "license": "MIT",
+  "dependencies": {
+    "sass-mediascreen": "^1.0.3"
+  }
+}
